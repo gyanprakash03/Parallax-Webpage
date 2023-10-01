@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#container {
+    position: relative;
+    z-index: -1;
+    transform-style: preserve-3d;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background, #foreground {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#background {
+    transform: translateZ(-40px) scale(5.1);
+}
+
+#foreground {
+    transform: translateZ(-20px) scale(3.3);
+}
+
+#adventure {
+    position: absolute;
+    color: white;
+    top: 3rem;
+    font-size: 10rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#head2 {
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg {
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic {
+    background-color: white;
+    padding: 0.5rem 2rem;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#bg1 {
+    background-image: url(sport-1.jpg);
+}
+
+#bg2 {
+    background-image: url(sport-2.jpg);
+}
+
+#bg3 {
+    background-image: url(sport-3.jpg);
+}
